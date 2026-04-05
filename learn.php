@@ -5,9 +5,7 @@ $name = "Marvin"; //string
 $age = 22; //integer
 $isStudent = true; //boolean
 
-?>
 
-<?php
 // 2.Classes (Blueprints)
 
 class Student{
@@ -26,9 +24,6 @@ $student1->name = "Marvin";
 $student1->age = 22;
 $student1->register(); // Output: Student register
 
-?>
-
-<?php
 // 3.Functions and methods
 
 // function($name){
@@ -41,9 +36,7 @@ class Calculator {
     }
 }
 
-?>
 
-<?php
 // 4.Encapsulation 
 
 class BankAccount {
