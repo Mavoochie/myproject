@@ -137,4 +137,13 @@ function counter(){
 counter(); // 1
 ?>
 
+<?php
+// Variable Assignment
+
+$a = 10;
+$b = 20;
+$c = $a + $b;
+echo"$c<br>";
+?>
+
 </html>
