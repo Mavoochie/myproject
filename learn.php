@@ -93,4 +93,48 @@ $Person->greet();
 $Person->showId();
 
 ?>
+
+<?php
+// Types of Variables (based on scope) 
+
+/*1. Local Variable
+Declared inside a function and can only 
+be used within that function.*/
+
+function test(){
+    $x = 10;
+    echo "$x<br>";
+}
+test();
+
+?>
+
+<?php
+// 2. Global Variable
+
+/*Declared outside a function and can be accessed 
+inside a function using the global keyword.*/
+
+$x = 20;
+function show(){
+    global $x;
+    echo "$x<br>";
+}
+show();
+?>
+
+<?php
+//3. Static Variable
+
+/*Retains its value between function calls.*/
+
+function counter(){
+    static $count = 0;
+    $count ++ ;
+    echo $count;
+}
+
+counter(); // 1
+?>
+
 </html>
