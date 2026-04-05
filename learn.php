@@ -150,7 +150,7 @@ if(isset($age)){
 Checks if a variable is empty.*/
 
 if(empty($age)){
-    echo"Variable is emplty";
+    echo"Variable is empty";
 }
 
 
