@@ -25,8 +25,7 @@ $student1->name = "Marvin";
 $student1->age = 22;
 $student1->register(); // Output: Student register
 
-?>
-<?php
+
 
 // 3.Functions and methods
 
@@ -39,9 +38,7 @@ class Calculator {
         return $a + $b;
     }
 }
-?>
 
-<?php
 
 // 4.Encapsulation 
 
@@ -58,9 +55,7 @@ class BankAccount {
     }
 }
 
-?>
 
-<?php
 // 5.Inheritance 
 
 /*Inheritance allows one class to reuse and extend another class’s 
@@ -92,9 +87,6 @@ $Person->studentId = "A-001";
 $Person->greet();
 $Person->showId();
 
-?>
-
-<?php
 // Types of Variables (based on scope) 
 
 /*1. Local Variable
@@ -107,9 +99,7 @@ function test(){
 }
 test();
 
-?>
 
-<?php
 // 2. Global Variable
 
 /*Declared outside a function and can be accessed 
@@ -121,9 +111,7 @@ function show(){
     echo "$x<br>";
 }
 show();
-?>
 
-<?php
 //3. Static Variable
 
 /*Retains its value between function calls.*/
@@ -135,15 +123,40 @@ function counter(){
 }
 
 counter(); // 1
-?>
 
-<?php
 // Variable Assignment
 
-$a = 10;
-$b = 20;
-$c = $a + $b;
+$b = 1;
+$c = 2;
+$d = $b + $c;
 echo"$c<br>";
+
+// Variable Variables
+$x = "name";
+$$x = "Charles";
+echo"$name<br>";
+
+
+// Checking Variables
+
+/* isset() 
+Checks if a variable is set and not NULL.*/
+
+if(isset($age)){
+    echo "Variable is set<br>";
+}
+
+/*empty() 
+Checks if a variable is empty.*/
+
+if(empty($age)){
+    echo"Variable is emplty";
+}
+
+
+// Example constant
+define("PI", 3.14);
+echo PI;
 ?>
 
 </html>
